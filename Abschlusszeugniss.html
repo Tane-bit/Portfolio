@@ -71,8 +71,8 @@
 
         .header.shrink {
             height: 80px;
-            /*flex-direction: row;
-            justify-content: flex-start;*/
+            flex-direction: row;
+            justify-content: flex-start;
             padding-left: 20px;
         }
 
@@ -117,31 +117,18 @@
 
     <header class="header" id="header">
         <img src="/img/Profil-Foto.jpg" alt="Profilbild">
-        <h1>Mein Portfolio</h1>
+        <h1>Zertifikate</h1>
     </header>
 
     <section id="about">
         <h2>Über mich</h2>
-        <p>
-            Moin, ich bin Özkan!
-
-            Ich mach gerade meine Umschulung zum Fachinformatiker für
-            Anwendungsentwicklung – kurz gesagt, ich bringe Maschinen bei,
-            schlau zu denken. 😎 Mein Ding sind Softwareentwicklung,
-            Datenbanken und alles, was mit Code zu tun hat. In meiner
-            Zeit als Werkstudent bei Signal Iduna hab ich schon einiges an
-            Erfahrung in Testautomatisierung und Qualitätssicherung gesammelt.
-            
-            Am liebsten bastel ich mit Python, JavaScript, SQL und Java rum
-            und entwickle coole, nutzerfreundliche Anwendungen. Ich steh auf
-            Teamwork, agiles Arbeiten und Herausforderungen, die nach kreativen
-            Lösungen schreien.
-        </p>
+        <p>Ich bin ....</p>
     </section>
     
     <section id="skills">
         <h2>Fähigkeiten</h2>
         <ul>
+            <li>Python</li> 
             <li>HTML & CSS</li>
             <li>JavaScript</li>
             <li>Backend-Entwicklung</li>
@@ -155,19 +142,21 @@
     </section>
     
     <section id="experience">
-        <h2><a href="Berufserfahrung">Berufserfahrung</h2>
+        <h2>Berufserfahrung</h2>
         <p>Berufserfahrung auflisten</p>
         
     </section>
     
     <section id="education">
-        <h2><a href="Bildungsweg">Bildungsweg</a></h2>
+        <h2>Bildungsweg</h2>
         <p>Details zum Bildungsweg.</p>
     </section>
-
-    <section id="certification">
-        <h2><a href="Zertifizierung">Zertifizierung</a></h2> 
-    </section>
+    
+    <section id="education">
+        <h2>Abschlusszeugniss</h2>
+        <p>Schulzeugnisse:
+        <ul><li><a href="Berufserfahrung">Fachhochschulreife</a></p></li></ul>
+        </section>
 
     <section id="contact">
         <h2>Kontakt</h2>
@@ -176,11 +165,10 @@
     </section>
     
     <footer>
-        <a class="scroll-to-top-button fadeOut" href="#header">
-            <img src="./img/scrolly.png" class="arrow" alt="Scroll to top">
-        </a>
         <p>&copy; 2025 Özkan Taneli. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <
 
     <script>
         window.addEventListener("scroll", function() {
