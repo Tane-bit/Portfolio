@@ -5,102 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Özkan-Taneli Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url(./img/Weiß.png);
-            background-position: unset;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-        }
-
-        nav ul li a:hover {
-            background-color: #575757;
-            border-radius: 5px;
-        }
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            padding-top: 60px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .header img {
-            width: 500px;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #333;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .header.shrink {
-            height: 80px;
-            /*flex-direction: row;
-            justify-content: flex-start;*/
-            padding-left: 20px;
-        }
-
-        .header.shrink img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .header h1 {
-            margin-top: 20px;
-            font-size: 24px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .header.shrink h1 {
-            font-size: 18px;
-            margin-left: 15px;
-        }
-
-        section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.792);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -138,59 +42,34 @@
             Lösungen schreien.
         </p>
     </section>
-    
-    <section id="skills">
-        <h2>Fähigkeiten</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Backend-Entwicklung</li>
-            <li>Datenbanken</li>
-        </ul>
-    </section>
-    
+
     <section id="projects">
         <h2>Projekte</h2>
-        <p>Hier sind meine Projekte.</p>
+        <p>„Wenn du neugierig auf meine Projekte bist, klick einfach auf den
+            GitHub-Link – da findest du alles, was ich so in meiner Freizeit
+            an spannenden Sachen bastle!"</p>
     </section>
     
     <section id="experience">
-        <h2><a href="Berufserfahrung">Berufserfahrung</h2>
+        <h2><a href="Berufserfahrung">Berufserfahrung</a></h2>
         <p>Berufserfahrung auflisten</p>
-        
-    </section>
-    
-    <section id="education">
-        <h2><a href="Bildungsweg">Bildungsweg</a></h2>
-        <p>Details zum Bildungsweg.</p>
-    </section>
-
-    <section id="certification">
-        <h2><a href="Zertifizierung">Zertifizierung</a></h2> 
     </section>
 
     <section id="contact">
         <h2>Kontakt</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/özkan-taneli-707278325" target="_blank">Özkan Taneli</a></p>
         <p>Email: <a href="mailto:it_oezkan.taneli@hotmail.com">it_oezkan.taneli@hotmail.com</a></p>
         <p>Tel: <a href="tel:+4917657742483">+49 176 57742483</a></p>
     </section>
     
     <footer>
-        <a class="scroll-to-top-button fadeOut" href="#header">
+        <a id="scrollToTopBtn" class="scroll-to-top-button fadeOut" href="#header">
             <img src="./img/scrolly.png" class="arrow" alt="Scroll to top">
         </a>
         <p>&copy; 2025 Özkan Taneli. Alle Rechte vorbehalten.</p>
     </footer>
 
-    <script>
-        window.addEventListener("scroll", function() {
-            var header = document.getElementById("header");
-            if (window.scrollY > 150) {
-                header.classList.add("shrink");
-            } else {
-                header.classList.remove("shrink");
-            }
-        });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
