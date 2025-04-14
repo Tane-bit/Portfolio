@@ -20,7 +20,6 @@ window.addEventListener("scroll", function() {
     }
 });
 
-// Füge die Funktion hinzu, um beim Klicken nach oben zu scrollen
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 scrollToTopBtn.addEventListener("click", function(event) {
